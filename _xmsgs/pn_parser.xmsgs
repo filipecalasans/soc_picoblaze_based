@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/UART.V&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram.v</arg>&quot; Line <arg fmt="%d" index="2">105</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram_parameters.vh&apos; in file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram.v&quot; line 105
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram.v</arg>&quot; Line <arg fmt="%d" index="2">1349</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram_parameters.vh&apos; in file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/cellram.v&quot; line 1349
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/io_buf.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/kcpsm6.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_11bitsShiftRegister.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_16BaudTickCounter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_16_n_8BaudTickCounter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_8bitReg.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_BAUD_Table.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_Rx_ControlUnit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_Rx_Core.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_Rx_fsm.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_Tx_ControlUnit.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_Tx_FSM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_Tx_Module.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_UART_toplevel.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_clockCounter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_contNumBits.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_counter4Bits.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_dff.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_dff_posReset.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_dff_processor.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_pulseMakerNegEdge.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_reset.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_reset_processor.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/lb_shiftreg_rx.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/mem_test_with-soc.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/memor_interface.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/memory_test_module.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/top_level.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

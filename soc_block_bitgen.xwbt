@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.ncd
+OUTFILE=C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project
+LICENSE=WebPack
+USER_INFO=210663801_0_0_878

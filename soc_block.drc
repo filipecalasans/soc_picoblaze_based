@@ -1,0 +1,98 @@
+Release 14.6 Drc P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Jun 10 09:52:46 2014
+
+drc -z soc_block.ncd soc_block.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_rx/rx_core/btickcounter/counter4Bits/reset_value[3]_AND_7_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   port_id[7]_GND_1_o_equal_7_o<7>1 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uart/donerx is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_interface/_n0320 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mem_interface/q[3]_PWR_110_o_Select_93_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net mem_interface/_n0244 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 23 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

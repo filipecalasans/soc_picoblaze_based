@@ -1,0 +1,268 @@
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+vhdtdtfi -lang verilog -prj soc_with_memory -o "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.tfi" -lib work "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project//soc_block.v" -module soc_block -template C:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj soc_with_memory -o "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.tfi" -lib work "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project//soc_block.v" -module soc_block -template C:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx9-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 "soc_block.ngc" soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+xst -intstyle ise -ifn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.xst" -ofn "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/soc_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc soc_ucf.ucf -p xc6slx16-csg324-3 soc_block.ngc soc_block.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o soc_block_map.ncd soc_block.ngd soc_block.pcf 
+par -w -intstyle ise -ol high -mt off soc_block_map.ncd soc_block.ncd soc_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf -ucf soc_ucf.ucf 
+bitgen -intstyle ise -f soc_block.ut soc_block.ncd 

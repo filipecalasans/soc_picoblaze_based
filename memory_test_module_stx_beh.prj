@@ -1,0 +1,4 @@
+verilog isim_temp "memor_interface.v"
+verilog isim_temp "cellram.v"
+verilog isim_temp "memory_test_module.v"
+verilog isim_temp "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+cellram instance_name (
+    .clk(clk), 
+    .adv_n(adv_n), 
+    .cre(cre), 
+    .o_wait(o_wait), 
+    .ce_n(ce_n), 
+    .oe_n(oe_n), 
+    .we_n(we_n), 
+    .lb_n(lb_n), 
+    .ub_n(ub_n), 
+    .addr(addr), 
+    .dq(dq)
+    );
+
+

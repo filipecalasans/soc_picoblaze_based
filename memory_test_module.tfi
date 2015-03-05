@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+memory_test_module instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .data_out(data_out), 
+    .data_in(data_in), 
+    .addr_mem_interface(addr_mem_interface), 
+    .write(write), 
+    .read(read)
+    );
+
+

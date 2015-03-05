@@ -1,0 +1,2292 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: soc_block.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "soc_block.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "soc_block"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : soc_block
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_dff.v" into library work
+Parsing module <lb_dff>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_pulseMakerNegEdge.v" into library work
+Parsing module <lb_pulseMakerNegEdge>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_counter4Bits.v" into library work
+Parsing module <lb_counter4Bits>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_clockCounter.v" into library work
+Parsing module <lb_clockCounter>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Tx_FSM.v" into library work
+Parsing module <lb_UART_Tx_FSM>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_fsm.v" into library work
+Parsing module <lb_UART_Rx_fsm>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_contNumBits.v" into library work
+Parsing module <lb_contNumBits>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_16_n_8BaudTickCounter.v" into library work
+Parsing module <lb_16_n_8BaudTickCounter>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_16BaudTickCounter.v" into library work
+Parsing module <lb_16BaudTickCounter>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Tx_ControlUnit.v" into library work
+Parsing module <lb_UART_Tx_ControlUnit>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_ControlUnit.v" into library work
+Parsing module <lb_UART_Rx_ControlUnit>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_shiftreg_rx.v" into library work
+Parsing module <lb_shiftreg_rx>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_11bitsShiftRegister.v" into library work
+Parsing module <lb_11bitsShiftRegister>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\UART.V" into library work
+Parsing module <uart_test_mem_pre_presentation>.
+Parsing module <jtag_loader_6>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Tx_Module.v" into library work
+Parsing module <lb_UART_Tx_Core>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_Core.v" into library work
+Parsing module <lb_UART_Rx_Core>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_dff_processor.v" into library work
+Parsing module <lb_dff_processor>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_dff_posReset.v" into library work
+Parsing module <lb_dff_posReset>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_BAUD_Table.v" into library work
+Parsing module <lb_BAUD_Table>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_8bitReg.v" into library work
+Parsing module <lb_8bitReg>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\kcpsm6.v" into library work
+Parsing module <kcpsm6>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\top_level.v" into library work
+Parsing module <processor_top_level>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\memor_interface.v" into library work
+Parsing module <memory_interface>.
+WARNING:HDLCompiler:751 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\memor_interface.v" Line 48: Redeclaration of ansi port data_mem is not allowed
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_toplevel.v" into library work
+Parsing module <lb_UART_toplevel>.
+WARNING:HDLCompiler:568 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_toplevel.v" Line 105: Constant value is truncated to fit in <8> bits.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_reset_processor.v" into library work
+Parsing module <lb_reset_processor>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_reset.v" into library work
+Parsing module <lb_reset>.
+Analyzing Verilog file "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v" into library work
+Parsing module <soc_block>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <soc_block>.
+
+Elaborating module <lb_reset>.
+
+Elaborating module <lb_dff_posReset>.
+
+Elaborating module <lb_reset_processor>.
+
+Elaborating module <lb_dff_processor>.
+WARNING:HDLCompiler:1127 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v" Line 73: Assignment to processor_reset ignored, since the identifier is never used
+
+Elaborating module <processor_top_level>.
+
+Elaborating module <kcpsm6>.
+
+Elaborating module <LUT6_2(INIT=64'b1111111111111111111101010101010100000000000000000000111011101110)>.
+
+Elaborating module <FD>.
+
+Elaborating module <LUT6_2(INIT=64'b010000011000000000000101100000000110001000000000001001100)>.
+
+Elaborating module <LUT6_2(INIT=64'b010000000000000000000000000000000000000000100000000000)>.
+
+Elaborating module <LUT6(INIT=64'b01100101010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100110000110011111111110000000010000000100000001000000010000000)>.
+
+Elaborating module <LUT6(INIT=64'b0101101000111100111111111111111100000000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111011101110111000000100111011100000000000000000000001000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111100000000000000000000000000000010001111111111)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111111111111111111111100000000000001000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111111111111111000100000000000000000000000000000010000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01111001010000000000000000000000100001000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0111011100001000000000000000000000000000000000000000111100000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1101000000000000000000000000000000000010000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01001111110011111100000000000100001111011111001110)>.
+
+Elaborating module <LUT6_2(INIT=64'b1100000011001100000000000000000010100000101010100000000000000000)>.
+
+Elaborating module <FDR>.
+
+Elaborating module <LUT6_2(INIT=64'b1000000000000000000000000000000000100000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b0100000000000000000000000000000000000001000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b010000000000000100000000000000000000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1010110010101100111111110000000011111111000000001111111100000000)>.
+
+Elaborating module <XORCY>.
+
+Elaborating module <LUT6_2(INIT=64'b010000111011110000000000000000000)>.
+
+Elaborating module <MUXCY>.
+
+Elaborating module <LUT6(INIT=64'b0110100110010110100101100110100110010110011010010110100110010110)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111111101010101100110011110000111100001111000011110000)>.
+
+Elaborating module <LUT6_2(INIT=64'b011001100110011101010101100110011110000101010100000000000000000)>.
+
+Elaborating module <FDRE>.
+
+Elaborating module <LUT6_2(INIT=64'b1010001010000000000000000000000000000000111100000000000011110000)>.
+
+Elaborating module <LUT6_2(INIT=64'b01)>.
+
+Elaborating module <LUT6_2(INIT=64'b0110100000000000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111101111111111000000000000000000000000000000000000000000000000)>.
+
+Elaborating module <LUT6_2(INIT=64'b1111111100000000111100001111000011001100110011001010101010101010)>.
+
+Elaborating module <LUT6(INIT=64'b010101010000000001111111100110011110011000000111100000000)>.
+
+Elaborating module <LUT6(INIT=64'b010101010000000001111111111001100110011001111000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b010101010000000000000000011001100110011001111000000000000)>.
+
+Elaborating module <RAM32M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
+
+Elaborating module <LUT6_2(INIT=64'b010101001010011010101010101010101010101010101010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b0101010001001010010101010101010101010101010101010101010)>.
+
+Elaborating module <LUT6_2(INIT=64'b0110100101101001011011101000101011001100110011000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1011111110111100100011111000110010110011101100001000001110000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111100000000111100001111000011001100110011001010101010101010)>.
+
+Elaborating module <RAM64M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
+
+Elaborating module <uart_test_mem_pre_presentation>.
+
+Elaborating module
+<RAMB16BWER(DATA_WIDTH_A=18,DOA_REG=0,EN_RSTRAM_A="FALSE",INIT_A=9'b0,RST_PRIORITY_A="CE",SRVAL_A=9'b0,WRITE_MODE_A="WRITE_FIRST",DATA_WIDTH_B=18,DOB_REG=0,EN_RSTRAM_B="FALSE",INIT_B=9'b0,RST_PRIORITY_B="CE",SRVAL_B=9'b0,WRITE_MODE_B="WRITE_FIRST",RSTTYPE="SYNC",INIT_FILE="NONE",SIM_COLLISION_CHECK="ALL",SIM_DEVICE="SPARTAN6",INIT_00=256'b011000000000001100100000000101100010110000000000001010100000000000111000000000000011011000000000001101000000000000000001001100000010001000000000001000000000000000000001001010000010010000000000001000100000000000100000000000000000000101011000000000001110011,INIT_01=256'b1101010100001010001000000000111000010110000000000000000010101100011000000001111111010101000011010010000000111110000000000100100101100000000110101101010100101010001000000001000100110000000000101001000000001011000001010001000010010001000010100010000000001110,INIT_02=256'b010110000000010000000010101100101000000011000011010110001010000001011000000001001000000000111010010110000000010010000000001110110101100000000000
+00000010110111011000000010101111010101000010000010000000001110000101100000000000000000101011000110000000100100,INIT_03=256'b01101100000000000110100000000000100000000011100000000001101011000000000101000000111100000000000011101100000000000010100000000000010000000000010000000010011000000100010000000000000000010100000000000010010100000000101100000000000001101100000000000010100000,INIT_04=256'b1100101011010000001000000110101011010110000000000001111100000000000111100000000000011101000000000000000010101100001000000000111000000000100110000001000100000000000100000000000000000000100101000000001011000000000000011011000000000000101000000001110000000000,INIT_05=256'b1100101011010000001111110000000000111110000000000000110100000000000100000000000100000000011010110000000010100010000000001001010000000010111100000000000111100000000000001101000000100000011010101100110011110000011000000101010111001011111000000110000001010101,INIT_06=256'b10010001000010111101000000001010001000000110101100110001000000101001000100001011010100000000
+00000001110000000000000110110000000000011010000000000010000001010101001000000110101001100000010101011100110011110000011000000101010111001011111000000110000001010101,INIT_07=256'b01000000100000000000000110101100010000010101000000000001101011000100000101000000000000011010110001000001001101000000000110101100010000010011110000000001101011000100000101001000000000011010110001000001010000010100000000000000100000011011110011000100000010,INIT_08=256'b01000000001101000000000110101100010000001101000000000001101011000100000011000100000000011010110001000000100000000000000110101100010000010000110000000001101011000100000101001100000000011010110001000001000101000000000110101100010000010001010000000001101011,INIT_09=256'b011000000000001100100000000110011010000000010011101000100000101110100000000010000100000100110000011001000000001100100100000110001010000000000001101001000000011110100010000001011010000000000010101000000000000000000000110101100010000000010100000000001101011,INIT_0A=256'b01101011000100000000101000000000011010110
+001000000001101010100000000000010010001000001111001000000000110001000001010011000110000000000011001000000001100110100000000100000100000101000100011000000000001100100000000110001010000000000000010000010011110,INIT_0B=256'b0101000000000000000000000110101100010000000010000000000001101011000100000010000000000000011010110001000000001000001000001011111111010110000000000101000000000000000000000110101100010000001000000000000001101011000100000011111000000000011010110001000001100011,INIT_0C=256'b0,INIT_0D=256'b0,INIT_0E=256'b0,INIT_0F=256'b0,INIT_10=256'b0,INIT_11=256'b0,INIT_12=256'b0,INIT_13=256'b0,INIT_14=256'b0,INIT_15=256'b0,INIT_16=256'b0,INIT_17=256'b0,INIT_18=256'b0,INIT_19=256'b0,INIT_1A=256'b0,INIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_20=256'b0,INIT_21=256'b0,INIT_22=256'b0,INIT_23=256'b0,INIT_24=256'b0,INIT_25=256'b0,INIT_26=256'b0,INIT_27=256'b0,INIT_28=256'b0,INIT_29=256'b0,INIT_2A=256'b0,INIT_2B=256'b0,INIT_2C=256'b0,INIT_2D=256'b0,INIT_2E=256'b0,INIT_2F=256'b0,INIT_3
+0=256'b0,INIT_31=256'b0,INIT_32=256'b0,INIT_33=256'b0,INIT_34=256'b0,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0,INITP_00=256'b010001000100010001000100010110000101100001000000010101101110111010101010010101000000011011101110111010000001010100000100000000000001010000101010010000010000000001011010110011101101101100010110110001011011010110111000000001100000000000000100000100000001010,INITP_01=256'b010100010001000110110100010001000100010001000001100001011000010110000101010110000101010101010001000100010001000100010001000100010,INITP_02=256'b0,INITP_03=256'b0,INITP_04=256'b0,INITP_05=256'b0,INITP_06=256'b0,INITP_07=256'b0>.
+
+Elaborating module <jtag_loader_6(C_FAMILY="S6",C_NUM_PICOBLAZE=1,C_JTAG_LOADER_ENABLE=1,C_BRAM_MAX_ADDR_WIDTH=32'sb01010,C_ADDR_WIDTH_0=32'sb01010)>.
+
+Elaborating module <BSCAN_SPARTAN6(JTAG_CHAIN=2)>.
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v" Line 87: Assignment to k_write_strobe ignored, since the identifier is never used
+
+Elaborating module <lb_UART_toplevel>.
+
+Elaborating module <lb_UART_Tx_Core>.
+
+Elaborating module <lb_UART_Tx_ControlUnit>.
+
+Elaborating module <lb_16BaudTickCounter>.
+
+Elaborating module <lb_pulseMakerNegEdge>.
+
+Elaborating module <lb_dff>.
+
+Elaborating module <lb_counter4Bits>.
+WARNING:HDLCompiler:413 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_counter4Bits.v" Line 27: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_counter4Bits.v" Line 28: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <lb_clockCounter>.
+WARNING:HDLCompiler:413 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_clockCounter.v" Line 35: Result of 32-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_clockCounter.v" Line 36: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <lb_UART_Tx_FSM>.
+
+Elaborating module <lb_contNumBits>.
+
+Elaborating module <lb_11bitsShiftRegister>.
+
+Elaborating module <lb_BAUD_Table>.
+
+Elaborating module <lb_UART_Rx_Core>.
+
+Elaborating module <lb_UART_Rx_ControlUnit>.
+
+Elaborating module <lb_UART_Rx_fsm>.
+
+Elaborating module <lb_16_n_8BaudTickCounter>.
+
+Elaborating module <lb_shiftreg_rx>.
+WARNING:HDLCompiler:413 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_Core.v" Line 68: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <lb_8bitReg>.
+
+Elaborating module <memory_interface>.
+
+Elaborating module <IOBUF>.
+
+Elaborating module <OBUF>.
+WARNING:HDLCompiler:413 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\memor_interface.v" Line 142: Result of 16-bit expression is truncated to fit in 15-bit target.
+WARNING:Xst:2972 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v" line 69. All outputs of instance <proc_reset> of block <lb_reset_processor> are unconnected in block <soc_block>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <soc_block>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v".
+INFO:Xst:3210 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v" line 69: Output port <system_reset> of the instance <proc_reset> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\soc_block.v" line 77: Output port <k_write_strobe> of the instance <processor> is unconnected or connected to loadless signal.
+    Found 16x4-bit Read Only RAM for signal <_n0192>
+WARNING:Xst:737 - Found 1-bit latch for signal <address_mem_interface<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address_mem_interface<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address_mem_interface<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address_mem_interface<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <adrs>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Latch(s).
+	inferred  10 Multiplexer(s).
+Unit <soc_block> synthesized.
+
+Synthesizing Unit <lb_reset>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_reset.v".
+    Summary:
+	no macro.
+Unit <lb_reset> synthesized.
+
+Synthesizing Unit <lb_dff_posReset>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_dff_posReset.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <lb_dff_posReset> synthesized.
+
+Synthesizing Unit <lb_dff_processor>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_dff_processor.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <lb_dff_processor> synthesized.
+
+Synthesizing Unit <processor_top_level>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\top_level.v".
+    Summary:
+	no macro.
+Unit <processor_top_level> synthesized.
+
+Synthesizing Unit <kcpsm6>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\kcpsm6.v".
+        hwbuild = 8'b00000000
+        interrupt_vector = 12'b001111111111
+        scratch_pad_memory_size = 64
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <reset_lut>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <run_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <internal_reset_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <sync_sleep_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <t_state_lut>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <t_state1_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <t_state2_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <int_enable_type_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <interrupt_enable_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <interrupt_enable_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <sync_interrupt_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <active_interrupt_lut>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <active_interrupt_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <interrupt_ack_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <pc_move_is_valid_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE0" for instance <move_type_lut>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <pc_mode1_lut>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <pc_mode2_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <push_pop_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <alu_decode0_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <alu_mux_sel0_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <alu_decode1_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <alu_mux_sel1_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <alu_decode2_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <register_enable_type_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <register_enable_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <flag_enable_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <register_enable_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <spm_enable_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <k_write_strobe_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <spm_enable_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <read_strobe_lut>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <write_strobe_flop>.
+    Set property "HBLKNM = KCPSM6_STROBES" for instance <read_strobe_flop>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <regbank_type_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <bank_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <bank_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <sx_addr4_flop>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <arith_carry_xorcy>.
+    Set property "HBLKNM = KCPSM6_CONTROL" for instance <arith_carry_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <lower_parity_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <parity_muxcy>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <upper_parity_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE2" for instance <parity_xorcy>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <shift_carry_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <shift_carry_flop>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <carry_flag_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <carry_flag_flop>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <init_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <use_zero_flag_lut>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <use_zero_flag_flop>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <lower_zero_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <lower_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <middle_zero_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <middle_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <upper_zero_lut>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <upper_zero_muxcy>.
+    Set property "HBLKNM = KCPSM6_FLAGS" for instance <zero_flag_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[0].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[0].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].lsb_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].lsb_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[0].lsb_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[1].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[1].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[2].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[2].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[2].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <address_loop[3].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC0" for instance <address_loop[3].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[4].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[4].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[4].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[5].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[5].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[6].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR0" for instance <address_loop[6].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[6].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[7].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC1" for instance <address_loop[7].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[8].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <address_loop[8].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[8].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[9].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].upper_pc.high_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[9].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[10].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_VECTOR1" for instance <address_loop[10].output_data.pc_vector_mux_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].upper_pc.low_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[10].upper_pc.mid_pc.pc_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <address_loop[11].return_vector_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[11].pc_flop>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[11].upper_pc.low_int_vector.pc_lut>.
+    Set property "HBLKNM = KCPSM6_PC2" for instance <address_loop[11].upper_pc.pc_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <shadow_carry_flag_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <stack_zero_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <shadow_zero_flag_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <shadow_bank_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <stack_bit_flop>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM0" for instance <stack_ram_low>.
+    Set property "HBLKNM = KCPSM6_STACK_RAM1" for instance <stack_ram_high>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[0].lsb_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[1].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[2].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK0" for instance <stack_loop[3].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.pointer_flop>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.stack_pointer_lut>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.stack_xorcy>.
+    Set property "HBLKNM = KCPSM6_STACK1" for instance <stack_loop[4].upper_stack.stack_muxcy>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[0].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[0].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].lsb_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[0].lsb_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[0].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_DECODE1" for instance <data_path_loop[0].lsb_shift_rotate.shift_bit_lut>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[0].lsb_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[0].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[0].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[1].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[1].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[1].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[1].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[2].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[2].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[2].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[2].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[2].mid_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[2].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[2].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD0" for instance <data_path_loop[3].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[3].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU0" for instance <data_path_loop[3].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM0" for instance <data_path_loop[3].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[4].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[4].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[4].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[4].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[4].mid_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[4].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[4].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[5].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[5].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[5].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[5].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_PORT_ID" for instance <data_path_loop[6].output_data.sy_kk_mux_lut>.
+    Set property "HBLKNM = KCPSM6_OUT_PORT" for instance <data_path_loop[6].second_operand.out_port_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[6].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[6].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[6].msb_shift_rotate.shift_rotate_lut>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[6].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[6].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].arith_logical_lut>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].arith_logical_flop>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].upper_arith_logical.arith_logical_muxcy>.
+    Set property "HBLKNM = KCPSM6_ADD1" for instance <data_path_loop[7].upper_arith_logical.arith_logical_xorcy>.
+    Set property "HBLKNM = KCPSM6_SANDR" for instance <data_path_loop[7].low_hwbuild.shift_rotate_flop>.
+    Set property "HBLKNM = KCPSM6_ALU1" for instance <data_path_loop[7].alu_mux_lut>.
+    Set property "HBLKNM = KCPSM6_SPM1" for instance <data_path_loop[7].small_spm.spm_flop>.
+    Set property "HBLKNM = KCPSM6_REG0" for instance <lower_reg_banks>.
+    Set property "HBLKNM = KCPSM6_REG1" for instance <upper_reg_banks>.
+    Summary:
+	no macro.
+Unit <kcpsm6> synthesized.
+
+Synthesizing Unit <uart_test_mem_pre_presentation>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\UART.V".
+        C_JTAG_LOADER_ENABLE = 1
+        C_FAMILY = "S6"
+        C_RAM_SIZE_KWORDS = 1
+        BRAM_ADDRESS_WIDTH = 10
+    Summary:
+	no macro.
+Unit <uart_test_mem_pre_presentation> synthesized.
+
+Synthesizing Unit <jtag_loader_6>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\UART.V".
+        C_JTAG_LOADER_ENABLE = 1
+        C_FAMILY = "S6"
+        C_NUM_PICOBLAZE = 1
+        C_BRAM_MAX_ADDR_WIDTH = 10
+        C_PICOBLAZE_INSTRUCTION_DATA_WIDTH = 18
+        C_JTAG_CHAIN = 2
+        C_ADDR_WIDTH_0 = 5'b01010
+        C_ADDR_WIDTH_1 = 5'b01010
+        C_ADDR_WIDTH_2 = 5'b01010
+        C_ADDR_WIDTH_3 = 5'b01010
+        C_ADDR_WIDTH_4 = 5'b01010
+        C_ADDR_WIDTH_5 = 5'b01010
+        C_ADDR_WIDTH_6 = 5'b01010
+        C_ADDR_WIDTH_7 = 5'b01010
+    Found 1-bit register for signal <bram_ce>.
+    Found 1-bit register for signal <jtag_we_int>.
+    Found 1-bit register for signal <jtag_addr_int<0>>.
+    Found 1-bit register for signal <jtag_addr_int<1>>.
+    Found 1-bit register for signal <jtag_addr_int<2>>.
+    Found 1-bit register for signal <jtag_addr_int<3>>.
+    Found 1-bit register for signal <jtag_addr_int<4>>.
+    Found 1-bit register for signal <jtag_addr_int<5>>.
+    Found 1-bit register for signal <jtag_addr_int<6>>.
+    Found 1-bit register for signal <jtag_addr_int<7>>.
+    Found 1-bit register for signal <jtag_addr_int<8>>.
+    Found 1-bit register for signal <jtag_addr_int<9>>.
+    Found 1-bit register for signal <jtag_din_int<0>>.
+    Found 1-bit register for signal <jtag_din_int<1>>.
+    Found 1-bit register for signal <jtag_din_int<2>>.
+    Found 1-bit register for signal <jtag_din_int<3>>.
+    Found 1-bit register for signal <jtag_din_int<4>>.
+    Found 1-bit register for signal <jtag_din_int<5>>.
+    Found 1-bit register for signal <jtag_din_int<6>>.
+    Found 1-bit register for signal <jtag_din_int<7>>.
+    Found 1-bit register for signal <jtag_din_int<8>>.
+    Found 1-bit register for signal <jtag_din_int<9>>.
+    Found 1-bit register for signal <jtag_din_int<10>>.
+    Found 1-bit register for signal <jtag_din_int<11>>.
+    Found 1-bit register for signal <jtag_din_int<12>>.
+    Found 1-bit register for signal <jtag_din_int<13>>.
+    Found 1-bit register for signal <jtag_din_int<14>>.
+    Found 1-bit register for signal <jtag_din_int<15>>.
+    Found 1-bit register for signal <jtag_din_int<16>>.
+    Found 1-bit register for signal <jtag_din_int<17>>.
+    Found 8-bit register for signal <control_dout_int>.
+    Found 1-bit register for signal <picoblaze_reset_int>.
+    Found 1-bit register for signal <control_reg_ce>.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+	inferred  27 Multiplexer(s).
+Unit <jtag_loader_6> synthesized.
+
+Synthesizing Unit <lb_UART_toplevel>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_toplevel.v".
+    Found 8-bit register for signal <buffer_tx>.
+    Found 1-bit tristate buffer for signal <data_out<7>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<6>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<5>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<4>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<3>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<2>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<1>> created at line 105
+    Found 1-bit tristate buffer for signal <data_out<0>> created at line 105
+WARNING:Xst:737 - Found 1-bit latch for signal <status_in<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <status_in<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <status_in<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <status_in<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <status_in<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   5 Latch(s).
+	inferred   2 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <lb_UART_toplevel> synthesized.
+
+Synthesizing Unit <lb_UART_Tx_Core>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Tx_Module.v".
+    Found 3-bit 6-to-1 multiplexer for signal <missingBits> created at line 63.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <lb_UART_Tx_Core> synthesized.
+
+Synthesizing Unit <lb_UART_Tx_ControlUnit>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Tx_ControlUnit.v".
+    Summary:
+	no macro.
+Unit <lb_UART_Tx_ControlUnit> synthesized.
+
+Synthesizing Unit <lb_16BaudTickCounter>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_16BaudTickCounter.v".
+    Summary:
+	no macro.
+Unit <lb_16BaudTickCounter> synthesized.
+
+Synthesizing Unit <lb_pulseMakerNegEdge>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_pulseMakerNegEdge.v".
+    Summary:
+	no macro.
+Unit <lb_pulseMakerNegEdge> synthesized.
+
+Synthesizing Unit <lb_dff>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_dff.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <lb_dff> synthesized.
+
+Synthesizing Unit <lb_counter4Bits>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_counter4Bits.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <cont>.
+    Found 1-bit register for signal <n_bits<3>>.
+    Found 1-bit register for signal <n_bits<2>>.
+    Found 1-bit register for signal <n_bits<1>>.
+    Found 1-bit register for signal <n_bits<0>>.
+    Found 5-bit adder for signal <n0038[4:0]> created at line 27.
+    Found 4-bit comparator equal for signal <cont[3]_n_bits[3]_equal_4_o> created at line 28
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <lb_counter4Bits> synthesized.
+
+Synthesizing Unit <lb_clockCounter>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_clockCounter.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 20-bit register for signal <cont>.
+    Found 1-bit register for signal <n_bits<19>>.
+    Found 1-bit register for signal <n_bits<18>>.
+    Found 1-bit register for signal <n_bits<17>>.
+    Found 1-bit register for signal <n_bits<16>>.
+    Found 1-bit register for signal <n_bits<15>>.
+    Found 1-bit register for signal <n_bits<14>>.
+    Found 1-bit register for signal <n_bits<13>>.
+    Found 1-bit register for signal <n_bits<12>>.
+    Found 1-bit register for signal <n_bits<11>>.
+    Found 1-bit register for signal <n_bits<10>>.
+    Found 1-bit register for signal <n_bits<9>>.
+    Found 1-bit register for signal <n_bits<8>>.
+    Found 1-bit register for signal <n_bits<7>>.
+    Found 1-bit register for signal <n_bits<6>>.
+    Found 1-bit register for signal <n_bits<5>>.
+    Found 1-bit register for signal <n_bits<4>>.
+    Found 1-bit register for signal <n_bits<3>>.
+    Found 1-bit register for signal <n_bits<2>>.
+    Found 1-bit register for signal <n_bits<1>>.
+    Found 1-bit register for signal <n_bits<0>>.
+    Found 21-bit adder for signal <n0083[20:0]> created at line 35.
+    Found 20-bit comparator equal for signal <cont[19]_n_bits[19]_equal_3_o> created at line 36
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <lb_clockCounter> synthesized.
+
+Synthesizing Unit <lb_UART_Tx_FSM>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Tx_FSM.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <shift> equivalent to <incNumBits> has been removed
+    Found 1-bit register for signal <resetBaudTickCounter>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <resetNumBitsCounter>.
+    Found 2-bit register for signal <q>.
+    Found 1-bit register for signal <incNumBits>.
+    Found 1-bit register for signal <load>.
+    Found finite state machine <FSM_0> for signal <q>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <lb_UART_Tx_FSM> synthesized.
+
+Synthesizing Unit <lb_contNumBits>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_contNumBits.v".
+    Found 4x4-bit Read Only RAM for signal <value>
+    Summary:
+	inferred   1 RAM(s).
+Unit <lb_contNumBits> synthesized.
+
+Synthesizing Unit <lb_11bitsShiftRegister>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_11bitsShiftRegister.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <data_out>.
+    Found 12-bit register for signal <data>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <lb_11bitsShiftRegister> synthesized.
+
+Synthesizing Unit <lb_BAUD_Table>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_BAUD_Table.v".
+    Found 16x20-bit Read Only RAM for signal <counterValue>
+    Summary:
+	inferred   1 RAM(s).
+Unit <lb_BAUD_Table> synthesized.
+
+Synthesizing Unit <lb_UART_Rx_Core>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_Core.v".
+    Found 11-bit 4-to-1 multiplexer for signal <data_received> created at line 64.
+    Found 1-bit 4-to-1 multiplexer for signal <stopErr> created at line 115.
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <lb_UART_Rx_Core> synthesized.
+
+Synthesizing Unit <lb_UART_Rx_ControlUnit>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_ControlUnit.v".
+    Summary:
+	no macro.
+Unit <lb_UART_Rx_ControlUnit> synthesized.
+
+Synthesizing Unit <lb_UART_Rx_fsm>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_UART_Rx_fsm.v".
+    Found 3-bit register for signal <q>.
+    Found 4x1-bit Read Only RAM for signal <half_n_complete>
+    Found 4x1-bit Read Only RAM for signal <resetBaudTickCounter>
+    Found 8x3-bit Read Only RAM for signal <_n0044>
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 RAM(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Latch(s).
+	inferred  11 Multiplexer(s).
+Unit <lb_UART_Rx_fsm> synthesized.
+
+Synthesizing Unit <lb_16_n_8BaudTickCounter>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_16_n_8BaudTickCounter.v".
+    Summary:
+	no macro.
+Unit <lb_16_n_8BaudTickCounter> synthesized.
+
+Synthesizing Unit <lb_shiftreg_rx>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_shiftreg_rx.v".
+    Found 12-bit register for signal <data_out>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <lb_shiftreg_rx> synthesized.
+
+Synthesizing Unit <lb_8bitReg>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\lb_8bitReg.v".
+    Found 8-bit register for signal <d_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <lb_8bitReg> synthesized.
+
+Synthesizing Unit <memory_interface>.
+    Related source file is "C:\Users\Filipe\Documents\TCC\TCC_SoC\SystemOnChipDesign\Project5\ise_project\memor_interface.v".
+WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <wWE>.
+    Found 1-bit register for signal <wOE>.
+    Found 1-bit register for signal <wCE>.
+    Found 8-bit register for signal <addr1>.
+    Found 8-bit register for signal <addr2>.
+    Found 8-bit register for signal <data_out0>.
+    Found 8-bit register for signal <data_out1>.
+    Found 8-bit register for signal <data_in0>.
+    Found 8-bit register for signal <data_in1>.
+    Found 8-bit register for signal <status>.
+    Found 8-bit register for signal <addr0>.
+    Found 4-bit register for signal <q>.
+    Found 15-bit register for signal <cont>.
+    Found 15-bit adder for signal <cont[14]_GND_96_o_add_41_OUT> created at line 142.
+WARNING:Xst:737 - Found 1-bit latch for signal <PWR_90_o_address[3]_DLATCH_13_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_14_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<7>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_16_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<6>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_18_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<5>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_20_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<4>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_22_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<3>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_24_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<2>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_26_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <data_out<1>> created at line 112
+    Found 1-bit tristate buffer for signal <data_out<0>> created at line 112
+WARNING:Xst:737 - Found 1-bit latch for signal <n_WE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_CE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_OE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <inc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <load_data_in_regs>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_q<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nxt_status<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <show_data_out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <address[3]_address[3]_DLATCH_12_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 15-bit comparator greater for signal <cont[14]_GND_96_o_LessThan_56_o> created at line 228
+    Found 15-bit comparator greater for signal <cont[14]_GND_96_o_LessThan_58_o> created at line 248
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  86 D-type flip-flop(s).
+	inferred  42 Latch(s).
+	inferred   2 Comparator(s).
+	inferred  76 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <memory_interface> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x20-bit single-port Read Only RAM                   : 1
+ 16x4-bit single-port Read Only RAM                    : 1
+ 4x1-bit single-port Read Only RAM                     : 2
+ 4x4-bit single-port Read Only RAM                     : 2
+ 8x3-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 7
+ 15-bit adder                                          : 1
+ 21-bit adder                                          : 2
+ 5-bit adder                                           : 4
+# Registers                                            : 117
+ 1-bit register                                        : 93
+ 10-bit register                                       : 1
+ 12-bit register                                       : 2
+ 15-bit register                                       : 1
+ 20-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 5
+ 8-bit register                                        : 12
+# Latches                                              : 55
+ 1-bit latch                                           : 55
+# Comparators                                          : 8
+ 15-bit comparator greater                             : 2
+ 20-bit comparator equal                               : 2
+ 4-bit comparator equal                                : 4
+# Multiplexers                                         : 157
+ 1-bit 2-to-1 multiplexer                              : 120
+ 1-bit 4-to-1 multiplexer                              : 1
+ 11-bit 4-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 15-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 4
+ 3-bit 6-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 10
+ 4-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 8
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor7                                            : 1
+ 1-bit xor8                                            : 2
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <d_out_2> (without init value) has a constant value of 0 in block <statusReg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_out_3> (without init value) has a constant value of 0 in block <statusReg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_out_7> (without init value) has a constant value of 0 in block <statusReg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <d_out_1> of sequential type is unconnected in block <statusReg>.
+WARNING:Xst:2677 - Node <status_in_1> of sequential type is unconnected in block <uart>.
+WARNING:Xst:2677 - Node <addr2_7> of sequential type is unconnected in block <mem_interface>.
+
+Synthesizing (advanced) Unit <lb_BAUD_Table>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_counterValue> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 20-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <baudSelect>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <counterValue>  |          |
+    -----------------------------------------------------------------------
+Unit <lb_BAUD_Table> synthesized (advanced).
+
+Synthesizing (advanced) Unit <lb_UART_Rx_fsm>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_half_n_complete> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <q<2:1>>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <half_n_complete> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0044> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <q>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_resetBaudTickCounter> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(q<2>,q<0>)>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <resetBaudTickCounter> |          |
+    -----------------------------------------------------------------------
+Unit <lb_UART_Rx_fsm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <lb_contNumBits>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_value> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(parity_en,bit8)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <value>         |          |
+    -----------------------------------------------------------------------
+Unit <lb_contNumBits> synthesized (advanced).
+
+Synthesizing (advanced) Unit <memory_interface>.
+The following registers are absorbed into counter <cont>: 1 register on signal <cont>.
+Unit <memory_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <soc_block>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0192> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <port_id<3:0>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <soc_block> synthesized (advanced).
+WARNING:Xst:2677 - Node <addr2_7> of sequential type is unconnected in block <memory_interface>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x20-bit single-port distributed Read Only RAM       : 1
+ 16x4-bit single-port distributed Read Only RAM        : 1
+ 4x1-bit single-port distributed Read Only RAM         : 2
+ 4x4-bit single-port distributed Read Only RAM         : 2
+ 8x3-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 6
+ 21-bit adder                                          : 2
+ 5-bit adder                                           : 4
+# Counters                                             : 1
+ 15-bit up counter                                     : 1
+# Registers                                            : 367
+ Flip-Flops                                            : 367
+# Comparators                                          : 8
+ 15-bit comparator greater                             : 2
+ 20-bit comparator equal                               : 2
+ 4-bit comparator equal                                : 4
+# Multiplexers                                         : 206
+ 1-bit 2-to-1 multiplexer                              : 176
+ 1-bit 4-to-1 multiplexer                              : 1
+ 11-bit 4-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 18-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 2
+ 3-bit 6-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 10
+ 4-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 8
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor7                                            : 1
+ 1-bit xor8                                            : 2
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/FSM_0> on signal <q[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+WARNING:Xst:1710 - FF/Latch <uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_13> (without init value) has a constant value of 0 in block <lb_UART_toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_16> (without init value) has a constant value of 0 in block <lb_UART_toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_17> (without init value) has a constant value of 0 in block <lb_UART_toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_15> (without init value) has a constant value of 0 in block <lb_UART_toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_18> (without init value) has a constant value of 0 in block <lb_UART_toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_19> (without init value) has a constant value of 0 in block <lb_UART_toplevel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <control_dout_int_1> (without init value) has a constant value of 0 in block <jtag_loader_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <control_dout_int_2> (without init value) has a constant value of 0 in block <jtag_loader_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <control_dout_int_5> (without init value) has a constant value of 0 in block <jtag_loader_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <control_dout_int_6> (without init value) has a constant value of 0 in block <jtag_loader_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_6> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_7> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_3> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_5> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_4> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_2> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nxt_status_1> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <n_q_3> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_1> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_2> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_3> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_4> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_5> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_6> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <status_7> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <q_3> (without init value) has a constant value of 0 in block <memory_interface>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <show_data_out_14> in Unit <memory_interface> is equivalent to the following 15 FFs/Latches, which will be removed : <show_data_out_11> <show_data_out_4> <show_data_out_12> <show_data_out_15> <show_data_out_13> <show_data_out_8> <show_data_out_10> <show_data_out_9> <show_data_out_5> <show_data_out_7> <show_data_out_6> <show_data_out_1> <show_data_out_3> <show_data_out_2> <show_data_out_0> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    rx_core/btickcounter/clockCounter/n_bits_0 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_1 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_3 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_4 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_2 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_5 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_6 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_7 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_8 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_10 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_11 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_9 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_13 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_14 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_12 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_16 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_17 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_15 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_18 in unit <lb_UART_Rx_Core>
+    rx_core/btickcounter/clockCounter/n_bits_19 in unit <lb_UART_Rx_Core>
+    n_bits_1 in unit <lb_counter4Bits>
+    n_bits_2 in unit <lb_counter4Bits>
+    n_bits_0 in unit <lb_counter4Bits>
+    n_bits_3 in unit <lb_counter4Bits>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_12 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_14 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_9 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_8 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_7 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_6 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_5 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_2 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_4 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_3 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_1 in unit <lb_UART_toplevel>
+    uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_0 in unit <lb_UART_toplevel>
+
+WARNING:Xst:2042 - Unit memory_interface: 8 internal tristates are replaced by logic (pull-up yes): data_out<0>, data_out<1>, data_out<2>, data_out<3>, data_out<4>, data_out<5>, data_out<6>, data_out<7>.
+WARNING:Xst:2042 - Unit lb_UART_toplevel: 8 internal tristates are replaced by logic (pull-up yes): data_out<0>, data_out<1>, data_out<2>, data_out<3>, data_out<4>, data_out<5>, data_out<6>, data_out<7>.
+
+Optimizing unit <kcpsm6> ...
+
+Optimizing unit <soc_block> ...
+
+Optimizing unit <lb_counter4Bits> ...
+
+Optimizing unit <lb_11bitsShiftRegister> ...
+
+Optimizing unit <lb_UART_Rx_Core> ...
+
+Optimizing unit <lb_UART_Rx_fsm> ...
+WARNING:Xst:1294 - Latch <n_q_0> is equivalent to a wire in block <lb_UART_Rx_fsm>.
+WARNING:Xst:1294 - Latch <n_q_1> is equivalent to a wire in block <lb_UART_Rx_fsm>.
+WARNING:Xst:1294 - Latch <n_q_2> is equivalent to a wire in block <lb_UART_Rx_fsm>.
+
+Optimizing unit <lb_shiftreg_rx> ...
+
+Optimizing unit <lb_8bitReg> ...
+
+Optimizing unit <jtag_loader_6> ...
+WARNING:Xst:1710 - FF/Latch <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_13> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_16> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_17> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_15> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_18> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_19> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/statusReg/d_out_7> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/statusReg/d_out_3> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/statusReg/d_out_2> (without init value) has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <uart/status_in_1> of sequential type is unconnected in block <soc_block>.
+WARNING:Xst:2677 - Node <uart/uart_rx/shift_reg/data_out_0> of sequential type is unconnected in block <soc_block>.
+WARNING:Xst:2677 - Node <uart/statusReg/d_out_1> of sequential type is unconnected in block <soc_block>.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:3203 - The FF/Latch <uart/uart_tx/tx_cu/fsm/resetBaudTickCounter> in Unit <soc_block> is the opposite to the following FF/Latch, which will be removed : <uart/uart_tx/tx_cu/fsm/incNumBits> 
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_3> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_tx/tx_cu/baudTickCounter/counter4Bits/n_bits_1> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_tx/tx_cu/baudTickCounter/counter4Bits/n_bits_2> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_tx/tx_cu/baudTickCounter/counter4Bits/n_bits_0> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_tx/tx_cu/baudTickCounter/counter4Bits/n_bits_3> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/bitCounterRx/counter4Bits/n_bits_3> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/counter4Bits/n_bits_0> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/counter4Bits/n_bits_2> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart/uart_rx/rx_core/btickcounter/counter4Bits/n_bits_1> (without init value) has a constant value of 1 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block soc_block, actual ratio is 6.
+INFO:Xst:2260 - The FF/Latch <uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10_LDC> in Unit <soc_block> is equivalent to the following FF/Latch : <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_10_LDC> 
+INFO:Xst:2261 - The FF/Latch <uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10_LDC> in Unit <soc_block> is equivalent to the following FF/Latch, which will be removed : <uart/uart_rx/rx_core/btickcounter/clockCounter/n_bits_10_LDC> 
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+Latch mem_interface/show_data_out_14 has been replicated 15 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 382
+ Flip-Flops                                            : 382
+
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <processor/processor/sync_sleep_flop> has a constant value of 0 in block <soc_block>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : soc_block.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 682
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 38
+#      LUT2                        : 33
+#      LUT3                        : 123
+#      LUT4                        : 66
+#      LUT5                        : 71
+#      LUT6                        : 116
+#      LUT6_2                      : 50
+#      MUXCY                       : 95
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 82
+# FlipFlops/Latches                : 443
+#      FD                          : 49
+#      FDC                         : 153
+#      FDCE                        : 66
+#      FDE                         : 31
+#      FDP                         : 44
+#      FDPE                        : 1
+#      FDR                         : 24
+#      FDRE                        : 14
+#      LD                          : 26
+#      LDC                         : 31
+#      LDE_1                       : 4
+# RAMS                             : 7
+#      RAM32M                      : 4
+#      RAM64M                      : 2
+#      RAMB16BWER                  : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 62
+#      IBUF                        : 10
+#      IOBUF                       : 16
+#      OBUF                        : 36
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             427  out of  18224     2%  
+ Number of Slice LUTs:                  526  out of   9112     5%  
+    Number used as Logic:               502  out of   9112     5%  
+    Number used as Memory:               24  out of   2176     1%  
+       Number used as RAM:               24
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    643
+   Number with an unused Flip Flop:     216  out of    643    33%  
+   Number with an unused LUT:           117  out of    643    18%  
+   Number of fully used LUT-FF pairs:   310  out of    643    48%  
+   Number of unique control sets:        78
+
+IO Utilization: 
+ Number of IOs:                          63
+ Number of bonded IOBs:                  63  out of    232    27%  
+    IOB Flip Flops/Latches:              16
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                         | Clock buffer(FF name)                                                           | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+port_id[7]_GND_1_o_equal_7_o<7>1(port_id[7]_GND_1_o_equal_7_o<7>11:O)                                                                                | NONE(*)(adrs)                                                                   | 5     |
+clk                                                                                                                                                  | BUFGP                                                                           | 353   |
+uart/donerx(uart/uart_rx/rx_core/rx_fsm/Mram__n004411:O)                                                                                             | NONE(*)(uart/status_in_5)                                                       | 4     |
+mem_interface/_n0320(mem_interface/out11:O)                                                                                                          | NONE(*)(mem_interface/show_data_out_14)                                         | 22    |
+mem_interface/q[3]_PWR_110_o_Select_93_o(mem_interface/Mmux_q[3]_PWR_110_o_Select_93_o1:O)                                                           | NONE(*)(mem_interface/n_q_2)                                                    | 3     |
+mem_interface/_n0244(mem_interface/out1:O)                                                                                                           | NONE(*)(mem_interface/address[3]_address[3]_DLATCH_26_q)                        | 9     |
+processor/program/jtag_clk                                                                                                                           | NONE(processor/program/instantiate_loader.jtag_loader_6_inst/control_dout_int_7)| 6     |
+processor/program/instantiate_loader.jtag_loader_6_inst/drck                                                                                         | BUFG                                                                            | 31    |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o1:O)| NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_12_LDC)          | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o1:O)| NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_14_LDC)          | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_9_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o1:O)| NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_LDC)          | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o1:O)| NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10_LDC)          | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_8_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_7_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_6_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_5_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_2_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_4_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_3_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_1_LDC)           | 1     |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o1:O)  | NONE(*)(uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_0_LDC)           | 1     |
+uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o(uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o1:O)    | NONE(*)(uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_1_LDC)            | 1     |
+uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o(uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o1:O)    | NONE(*)(uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_2_LDC)            | 1     |
+uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o(uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o1:O)    | NONE(*)(uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_0_LDC)            | 1     |
+uart/uart_rx/rx_core/btickcounter/counter4Bits/reset_value[3]_AND_7_o(uart/uart_rx/rx_core/btickcounter/counter4Bits/reset_value[3]_AND_7_o1:O)      | NONE(*)(uart/uart_rx/rx_core/btickcounter/counter4Bits/n_bits_3_LDC)            | 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+(*) These 23 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.819ns (Maximum Frequency: 113.393MHz)
+   Minimum input arrival time before clock: 4.326ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.819ns (frequency: 113.393MHz)
+  Total number of paths / destination ports: 14828 / 798
+-------------------------------------------------------------------------
+Delay:               8.819ns (Levels of Logic = 8)
+  Source:            processor/program/ram_1k_generate.s6.kcpsm6_rom (RAM)
+  Destination:       processor/processor/zero_flag_flop (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: processor/program/ram_1k_generate.s6.kcpsm6_rom to processor/processor/zero_flag_flop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA12   16   1.850   1.004  processor/program/ram_1k_generate.s6.kcpsm6_rom (processor/instruction<12>)
+     LUT6_2:I4->O6        12   0.568   1.013  processor/processor/data_path_loop[4].output_data.sy_kk_mux_lut (port_id<5>)
+     LUT4:I2->O           14   0.203   1.062  _n0078<7>1 (_n0078)
+     LUT6:I4->O            1   0.203   0.827  data_out_mem_interface<3>LogicTrst1 (data_out_mem_interface<3>)
+     LUT6:I2->O            3   0.320   0.650  processor/processor/data_path_loop[3].alu_mux_lut (processor/processor/alu_result<3>)
+     LUT6_2:I3->O6         1   0.568   0.000  processor/processor/lower_zero_lut (processor/processor/lower_zero_sel)
+     MUXCY:S->O            1   0.172   0.000  processor/processor/lower_zero_muxcy (processor/processor/carry_lower_zero)
+     MUXCY:CI->O           1   0.019   0.000  processor/processor/middle_zero_muxcy (processor/processor/carry_middle_zero)
+     MUXCY:CI->O           1   0.258   0.000  processor/processor/upper_zero_muxcy (processor/processor/zero_flag_value)
+     FDRE:D                    0.102          processor/processor/zero_flag_flop
+    ----------------------------------------
+    Total                      8.819ns (4.263ns logic, 4.556ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'processor/program/jtag_clk'
+  Clock period: 1.747ns (frequency: 572.328MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               1.747ns (Levels of Logic = 1)
+  Source:            processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0 (FF)
+  Destination:       processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0 (FF)
+  Source Clock:      processor/program/jtag_clk rising
+  Destination Clock: processor/program/jtag_clk rising
+
+  Data Path: processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0 to processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0 (processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0)
+     LUT5:I0->O            1   0.203   0.000  processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0_rstpot (processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0_rstpot)
+     FD:D                      0.102          processor/program/instantiate_loader.jtag_loader_6_inst/picoblaze_reset_int_0
+    ----------------------------------------
+    Total                      1.747ns (0.752ns logic, 0.995ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'processor/program/instantiate_loader.jtag_loader_6_inst/drck'
+  Clock period: 3.365ns (frequency: 297.217MHz)
+  Total number of paths / destination ports: 85 / 48
+-------------------------------------------------------------------------
+Delay:               3.365ns (Levels of Logic = 1)
+  Source:            processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_0 (FF)
+  Destination:       processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17 (FF)
+  Source Clock:      processor/program/instantiate_loader.jtag_loader_6_inst/drck rising
+  Destination Clock: processor/program/instantiate_loader.jtag_loader_6_inst/drck rising
+
+  Data Path: processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_0 to processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             21   0.447   1.342  processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_0 (processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_0)
+     LUT4:I1->O           18   0.205   1.049  processor/program/instantiate_loader.jtag_loader_6_inst/_n0186_inv1 (processor/program/instantiate_loader.jtag_loader_6_inst/_n0186_inv)
+     FDE:CE                    0.322          processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_0
+    ----------------------------------------
+    Total                      3.365ns (0.974ns logic, 2.391ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 518 / 170
+-------------------------------------------------------------------------
+Offset:              4.326ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_P_11 (FF)
+  Destination Clock: clk rising
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_P_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.821  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I0->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o)
+     FDP:PRE                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_P_11
+    ----------------------------------------
+    Total                      4.326ns (1.855ns logic, 2.471ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/donerx'
+  Total number of paths / destination ports: 5 / 2
+-------------------------------------------------------------------------
+Offset:              3.262ns (Levels of Logic = 3)
+  Source:            odd_n_even (PAD)
+  Destination:       uart/status_in_5 (LATCH)
+  Destination Clock: uart/donerx falling
+
+  Data Path: odd_n_even to uart/status_in_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.651  odd_n_even_IBUF (odd_n_even_IBUF)
+     LUT5:I4->O            1   0.205   0.944  uart/uart_rx/parity_err2 (uart/uart_rx/parity_err1)
+     LUT6:I0->O            1   0.203   0.000  uart/uart_rx/parity_err4 (uart/parity_err)
+     LDC:D                     0.037          uart/status_in_5
+    ----------------------------------------
+    Total                      3.262ns (1.667ns logic, 1.595ns route)
+                                       (51.1% logic, 48.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'processor/program/jtag_clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              2.431ns (Levels of Logic = 1)
+  Source:            processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst:SEL (PAD)
+  Destination:       processor/program/instantiate_loader.jtag_loader_6_inst/control_dout_int_7 (FF)
+  Destination Clock: processor/program/jtag_clk rising
+
+  Data Path: processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst:SEL to processor/program/instantiate_loader.jtag_loader_6_inst/control_dout_int_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL    21   0.000   1.114  processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst (processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_valid)
+     LUT3:I2->O            4   0.205   0.683  processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_valid_control_reg_ce_AND_3_o_inv1 (processor/program/instantiate_loader.jtag_loader_6_inst/bram_ce_valid_control_reg_ce_AND_3_o_inv)
+     FDR:R                     0.430          processor/program/instantiate_loader.jtag_loader_6_inst/control_dout_int_0
+    ----------------------------------------
+    Total                      2.431ns (0.635ns logic, 1.796ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'processor/program/instantiate_loader.jtag_loader_6_inst/drck'
+  Total number of paths / destination ports: 86 / 50
+-------------------------------------------------------------------------
+Offset:              2.854ns (Levels of Logic = 1)
+  Source:            processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst:SHIFT (PAD)
+  Destination:       processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17 (FF)
+  Destination Clock: processor/program/instantiate_loader.jtag_loader_6_inst/drck rising
+
+  Data Path: processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst:SHIFT to processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT   31   0.000   1.278  processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst (processor/program/instantiate_loader.jtag_loader_6_inst/shift)
+     LUT4:I3->O           18   0.205   1.049  processor/program/instantiate_loader.jtag_loader_6_inst/_n0186_inv1 (processor/program/instantiate_loader.jtag_loader_6_inst/_n0186_inv)
+     FDE:CE                    0.322          processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_0
+    ----------------------------------------
+    Total                      2.854ns (0.527ns logic, 2.327ns route)
+                                       (18.5% logic, 81.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              4.098ns (Levels of Logic = 2)
+  Source:            baud_val<1> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_12_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o falling
+
+  Data Path: baud_val<1> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_12_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.222   1.591  baud_val_1_IBUF (baud_val_1_IBUF)
+     LUT4:I1->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_30_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_30_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_12_LDC
+    ----------------------------------------
+    Total                      4.098ns (1.857ns logic, 2.241ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.212ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_14_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_14_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.705  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I2->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_26_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_26_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_14_LDC
+    ----------------------------------------
+    Total                      4.212ns (1.857ns logic, 2.355ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.229ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_9_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.724  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_36_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_36_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_9_LDC
+    ----------------------------------------
+    Total                      4.229ns (1.855ns logic, 2.374ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.212ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.705  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I2->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_32_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_32_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_11_LDC
+    ----------------------------------------
+    Total                      4.212ns (1.857ns logic, 2.355ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              4.212ns (Levels of Logic = 2)
+  Source:            baud_val<3> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o falling
+
+  Data Path: baud_val<3> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.705  baud_val_3_IBUF (baud_val_3_IBUF)
+     LUT4:I1->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_34_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_34_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_10_LDC
+    ----------------------------------------
+    Total                      4.212ns (1.857ns logic, 2.355ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.172ns (Levels of Logic = 2)
+  Source:            baud_val<0> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_8_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o falling
+
+  Data Path: baud_val<0> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   1.222   1.667  baud_val_0_IBUF (baud_val_0_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_38_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_38_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_8_LDC
+    ----------------------------------------
+    Total                      4.172ns (1.855ns logic, 2.317ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              4.155ns (Levels of Logic = 2)
+  Source:            baud_val<0> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_7_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o falling
+
+  Data Path: baud_val<0> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            41   1.222   1.648  baud_val_0_IBUF (baud_val_0_IBUF)
+     LUT4:I1->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_40_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_40_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_7_LDC
+    ----------------------------------------
+    Total                      4.155ns (1.857ns logic, 2.298ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.229ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_6_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.724  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_42_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_42_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_6_LDC
+    ----------------------------------------
+    Total                      4.229ns (1.855ns logic, 2.374ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.212ns (Levels of Logic = 2)
+  Source:            baud_val<3> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_5_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o falling
+
+  Data Path: baud_val<3> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.705  baud_val_3_IBUF (baud_val_3_IBUF)
+     LUT5:I2->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_44_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_44_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_5_LDC
+    ----------------------------------------
+    Total                      4.212ns (1.857ns logic, 2.355ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.229ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_2_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.724  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_50_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_50_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_2_LDC
+    ----------------------------------------
+    Total                      4.229ns (1.855ns logic, 2.374ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.229ns (Levels of Logic = 2)
+  Source:            baud_val<3> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_4_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o falling
+
+  Data Path: baud_val<3> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.724  baud_val_3_IBUF (baud_val_3_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_46_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_46_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_4_LDC
+    ----------------------------------------
+    Total                      4.229ns (1.855ns logic, 2.374ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.229ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_3_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.724  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_48_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_48_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_3_LDC
+    ----------------------------------------
+    Total                      4.229ns (1.855ns logic, 2.374ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.212ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_1_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.705  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I2->O            3   0.205   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_52_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_52_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_1_LDC
+    ----------------------------------------
+    Total                      4.212ns (1.857ns logic, 2.355ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              4.229ns (Levels of Logic = 2)
+  Source:            baud_val<2> (PAD)
+  Destination:       uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_0_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o falling
+
+  Data Path: baud_val<2> to uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            45   1.222   1.724  baud_val_2_IBUF (baud_val_2_IBUF)
+     LUT5:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_54_o1 (uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_54_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/baudTickCounter/clockCounter/n_bits_0_LDC
+    ----------------------------------------
+    Total                      4.229ns (1.855ns logic, 2.374ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.963ns (Levels of Logic = 2)
+  Source:            parity_en (PAD)
+  Destination:       uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_1_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o falling
+
+  Data Path: parity_en to uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.362  parity_en_IBUF (parity_en_IBUF)
+     LUT3:I0->O            6   0.205   0.744  uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o1 (uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_1_LDC
+    ----------------------------------------
+    Total                      3.963ns (1.857ns logic, 2.106ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.837ns (Levels of Logic = 2)
+  Source:            bit8 (PAD)
+  Destination:       uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_2_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o falling
+
+  Data Path: bit8 to uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.238  bit8_IBUF (bit8_IBUF)
+     LUT3:I1->O            6   0.203   0.744  uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o1 (uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_2_LDC
+    ----------------------------------------
+    Total                      3.837ns (1.855ns logic, 1.982ns route)
+                                       (48.3% logic, 51.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.743ns (Levels of Logic = 2)
+  Source:            bit8 (PAD)
+  Destination:       uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_0_LDC (LATCH)
+  Destination Clock: uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o falling
+
+  Data Path: bit8 to uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.238  bit8_IBUF (bit8_IBUF)
+     LUT3:I1->O            3   0.203   0.650  uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_14_o1 (uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_14_o)
+     LDC:CLR                   0.430          uart/uart_tx/tx_cu/counterNumBits/counter4Bits/n_bits_0_LDC
+    ----------------------------------------
+    Total                      3.743ns (1.855ns logic, 1.888ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 44 / 44
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            mem_interface/data_out1_7 (FF)
+  Destination:       data_mem_mem_interface<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mem_interface/data_out1_7 to data_mem_mem_interface<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  mem_interface/data_out1_7 (mem_interface/data_out1_7)
+     IOBUF:I->IO               2.571          mem_interface/io_data_mem<15> (data_mem_mem_interface<15>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mem_interface/_n0320'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            mem_interface/show_data_out_14_1 (LATCH)
+  Destination:       data_mem_mem_interface<15> (PAD)
+  Source Clock:      mem_interface/_n0320 falling
+
+  Data Path: mem_interface/show_data_out_14_1 to data_mem_mem_interface<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  mem_interface/show_data_out_14_1 (mem_interface/show_data_out_14_1)
+     IOBUF:T->IO               2.571          mem_interface/io_data_mem<15> (data_mem_mem_interface<15>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'processor/program/instantiate_loader.jtag_loader_6_inst/drck'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.026ns (Levels of Logic = 0)
+  Source:            processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17 (FF)
+  Destination:       processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst:TDO (PAD)
+  Source Clock:      processor/program/instantiate_loader.jtag_loader_6_inst/drck rising
+
+  Data Path: processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17 to processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17 (processor/program/instantiate_loader.jtag_loader_6_inst/jtag_din_int_17)
+    BSCAN_SPARTAN6:TDO         0.000          processor/program/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.BSCAN_SPARTAN6_gen.BSCAN_BLOCK_inst
+    ----------------------------------------
+    Total                      1.026ns (0.447ns logic, 0.579ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------------+---------+---------+---------+---------+
+clk                                                                     |    8.819|         |         |         |
+mem_interface/_n0244                                                    |         |    4.764|         |         |
+mem_interface/_n0320                                                    |         |    2.511|         |         |
+mem_interface/q[3]_PWR_110_o_Select_93_o                                |         |    1.179|         |         |
+port_id[7]_GND_1_o_equal_7_o<7>1                                        |    3.196|    5.679|         |         |
+processor/program/jtag_clk                                              |    2.552|         |         |         |
+uart/donerx                                                             |         |    1.179|         |         |
+uart/uart_rx/rx_core/btickcounter/counter4Bits/reset_value[3]_AND_7_o   |         |    3.502|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o |         |    4.804|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o|         |    4.604|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o|         |    4.405|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o|         |    4.733|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o|         |    4.386|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o |         |    4.690|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o |         |    4.462|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o |         |    4.785|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o |         |    4.671|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o |         |    4.443|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o |         |    4.766|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o |         |    4.657|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o |         |    4.424|         |         |
+uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o |         |    4.747|         |         |
+uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o  |         |    4.828|         |         |
+uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o  |         |    2.911|         |         |
+uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o  |         |    4.152|         |         |
+------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mem_interface/_n0244
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    7.059|         |
+port_id[7]_GND_1_o_equal_7_o<7>1|         |         |    3.009|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mem_interface/_n0320
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    8.362|         |
+port_id[7]_GND_1_o_equal_7_o<7>1|         |         |    3.220|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mem_interface/q[3]_PWR_110_o_Select_93_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    8.248|         |
+port_id[7]_GND_1_o_equal_7_o<7>1|         |         |    3.188|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock port_id[7]_GND_1_o_equal_7_o<7>1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.157|         |    5.940|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock processor/program/instantiate_loader.jtag_loader_6_inst/drck
+------------------------------------------------------------+---------+---------+---------+---------+
+                                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------+---------+---------+---------+---------+
+processor/program/instantiate_loader.jtag_loader_6_inst/drck|    3.365|         |         |         |
+processor/program/jtag_clk                                  |    2.982|         |         |         |
+------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock processor/program/jtag_clk
+------------------------------------------------------------+---------+---------+---------+---------+
+                                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------+---------+---------+---------+---------+
+processor/program/instantiate_loader.jtag_loader_6_inst/drck|    2.766|         |         |         |
+processor/program/jtag_clk                                  |    1.747|         |         |         |
+------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/donerx
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    8.083|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_rx/rx_core/btickcounter/counter4Bits/reset_value[3]_AND_7_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.368|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[0]_AND_53_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[10]_AND_33_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.312|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[11]_AND_31_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[12]_AND_29_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.312|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[14]_AND_25_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[1]_AND_51_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[2]_AND_49_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[3]_AND_47_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[4]_AND_45_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[5]_AND_43_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[6]_AND_41_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[7]_AND_39_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.312|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[8]_AND_37_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/baudTickCounter/clockCounter/reset_value[9]_AND_35_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.409|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[0]_AND_13_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.295|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[1]_AND_12_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.389|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/uart_tx/tx_cu/counterNumBits/counter4Bits/reset_value[2]_AND_10_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.161|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.19 secs
+ 
+--> 
+
+Total memory usage is 252232 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

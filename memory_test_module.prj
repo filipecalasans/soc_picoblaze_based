@@ -1,0 +1,3 @@
+verilog work "memor_interface.v"
+verilog work "cellram.v"
+verilog work "memory_test_module.v"

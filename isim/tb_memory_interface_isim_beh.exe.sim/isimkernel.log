@@ -1,0 +1,10 @@
+Command line:
+   tb_memory_interface_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59642
+
+Mon Jun 09 16:49:16 2014
+
+
+ Elaboration Time: 0.0625 sec

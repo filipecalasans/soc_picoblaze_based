@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+mem_test_with_soc instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .tx(tx), 
+    .rx(rx), 
+    .interrupt(interrupt), 
+    .interrupt_ack(interrupt_ack), 
+    .bit8(bit8), 
+    .parity_en(parity_en), 
+    .odd_n_even(odd_n_even), 
+    .baud_val(baud_val)
+    );
+
+

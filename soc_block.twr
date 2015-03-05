@@ -1,0 +1,206 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml soc_block.twx soc_block.ncd -o soc_block.twr soc_block.pcf
+-ucf soc_ucf.ucf
+
+Design file:              soc_block.ncd
+Physical constraint file: soc_block.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+--------------------------+------------+------------+------------+------------+------------------+--------+
+                          |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source                    | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+--------------------------+------------+------------+------------+------------+------------------+--------+
+data_mem_mem_interface<0> |    1.413(R)|      SLOW  |   -0.880(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<1> |    1.160(R)|      FAST  |   -0.628(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<2> |    1.003(R)|      FAST  |   -0.360(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<3> |    1.577(R)|      SLOW  |   -1.037(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<4> |    0.962(R)|      FAST  |   -0.379(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<5> |    1.378(R)|      SLOW  |   -0.854(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<6> |    1.349(R)|      FAST  |   -0.788(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<7> |    1.135(R)|      FAST  |   -0.535(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<8> |    1.860(R)|      SLOW  |   -1.254(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<9> |    1.726(R)|      SLOW  |   -1.182(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<10>|    1.053(R)|      FAST  |   -0.463(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<11>|    1.038(R)|      FAST  |   -0.461(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<12>|    1.212(R)|      SLOW  |   -0.684(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<13>|    0.671(R)|      FAST  |    0.043(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<14>|    1.430(R)|      SLOW  |   -0.900(R)|      SLOW  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<15>|    1.092(R)|      FAST  |   -0.490(R)|      SLOW  |clk_BUFGP         |   0.000|
+interrupt                 |    2.254(R)|      SLOW  |   -1.451(R)|      FAST  |clk_BUFGP         |   0.000|
+odd_n_even                |    2.885(R)|      SLOW  |   -1.487(R)|      FAST  |clk_BUFGP         |   0.000|
+reset                     |    5.068(R)|      SLOW  |   -1.223(R)|      FAST  |clk_BUFGP         |   0.000|
+rx                        |    2.124(R)|      SLOW  |   -0.277(R)|      SLOW  |clk_BUFGP         |   0.000|
+--------------------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+--------------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                          |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination               |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------------------+-----------------+------------+-----------------+------------+------------------+--------+
+addr_mem_mem_interface<0> |         6.769(R)|      SLOW  |         3.448(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<1> |         7.045(R)|      SLOW  |         3.638(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<2> |         6.740(R)|      SLOW  |         3.435(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<3> |         7.164(R)|      SLOW  |         3.733(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<4> |         7.003(R)|      SLOW  |         3.598(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<5> |         7.437(R)|      SLOW  |         3.892(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<6> |         7.163(R)|      SLOW  |         3.694(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<7> |         7.453(R)|      SLOW  |         3.903(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<8> |         7.075(R)|      SLOW  |         3.645(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<9> |         7.289(R)|      SLOW  |         3.795(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<10>|         8.058(R)|      SLOW  |         4.245(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<11>|         8.058(R)|      SLOW  |         4.245(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<12>|         7.892(R)|      SLOW  |         4.151(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<13>|         8.065(R)|      SLOW  |         4.253(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<14>|         8.055(R)|      SLOW  |         4.240(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<15>|         8.055(R)|      SLOW  |         4.240(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<16>|         8.266(R)|      SLOW  |         4.362(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<17>|         8.255(R)|      SLOW  |         4.382(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<18>|         8.214(R)|      SLOW  |         4.339(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<19>|         8.215(R)|      SLOW  |         4.355(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<20>|         8.432(R)|      SLOW  |         4.459(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<21>|         8.354(R)|      SLOW  |         4.425(R)|      FAST  |clk_BUFGP         |   0.000|
+addr_mem_mem_interface<22>|         8.514(R)|      SLOW  |         4.521(R)|      FAST  |clk_BUFGP         |   0.000|
+control_mem<4>            |         7.078(R)|      SLOW  |         3.657(R)|      FAST  |clk_BUFGP         |   0.000|
+control_mem<5>            |         7.337(R)|      SLOW  |         3.821(R)|      FAST  |clk_BUFGP         |   0.000|
+control_mem<6>            |         7.522(R)|      SLOW  |         3.929(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<0> |         7.812(R)|      SLOW  |         4.135(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<1> |         7.587(R)|      SLOW  |         3.997(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<2> |         7.511(R)|      SLOW  |         3.931(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<3> |         8.223(R)|      SLOW  |         4.432(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<4> |         8.346(R)|      SLOW  |         4.509(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<5> |         8.441(R)|      SLOW  |         4.588(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<6> |         8.607(R)|      SLOW  |         4.714(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<7> |         8.328(R)|      SLOW  |         4.487(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<8> |         8.914(R)|      SLOW  |         4.871(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<9> |         9.339(R)|      SLOW  |         5.107(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<10>|         7.934(R)|      SLOW  |         4.173(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<11>|         8.209(R)|      SLOW  |         4.369(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<12>|         8.414(R)|      SLOW  |         4.472(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<13>|         8.310(R)|      SLOW  |         4.422(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<14>|         8.292(R)|      SLOW  |         4.427(R)|      FAST  |clk_BUFGP         |   0.000|
+data_mem_mem_interface<15>|         8.459(R)|      SLOW  |         4.556(R)|      FAST  |clk_BUFGP         |   0.000|
+interrupt_ack             |         8.649(R)|      SLOW  |         4.618(R)|      FAST  |clk_BUFGP         |   0.000|
+tx                        |         7.558(R)|      SLOW  |         3.937(R)|      FAST  |clk_BUFGP         |   0.000|
+--------------------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock baud_val<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+baud_val<0>    |         |         |    0.937|    0.937|
+baud_val<1>    |         |         |    0.247|    0.247|
+baud_val<2>    |         |         |    0.816|    0.816|
+baud_val<3>    |         |         |    1.010|    1.010|
+clk            |         |         |    4.647|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock baud_val<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+baud_val<0>    |         |         |    1.791|    1.791|
+baud_val<1>    |         |         |    0.902|    0.902|
+baud_val<2>    |         |         |    1.641|    1.641|
+baud_val<3>    |         |         |    1.727|    1.727|
+clk            |         |         |    3.539|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock baud_val<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+baud_val<0>    |         |         |    1.304|    1.304|
+baud_val<1>    |         |         |    0.850|    0.850|
+baud_val<2>    |         |         |    0.945|    0.945|
+baud_val<3>    |         |         |    1.376|    1.376|
+clk            |         |         |    4.647|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock baud_val<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+baud_val<0>    |         |         |    1.451|    1.451|
+baud_val<1>    |         |         |    0.997|    0.997|
+baud_val<2>    |         |         |    1.351|    1.351|
+baud_val<3>    |         |         |    0.943|    0.943|
+clk            |         |         |    4.647|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bit8
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bit8           |         |         |    0.908|    0.908|
+clk            |         |         |    0.726|         |
+parity_en      |         |         |    0.976|    0.976|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+baud_val<0>    |    4.934|    8.622|         |         |
+baud_val<1>    |    4.450|    8.622|         |         |
+baud_val<2>    |    4.441|    8.622|         |         |
+baud_val<3>    |    4.976|    8.622|         |         |
+bit8           |    3.785|    7.239|         |         |
+clk            |    9.049|         |         |         |
+parity_en      |    3.642|    7.239|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock parity_en
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+bit8           |         |         |    1.016|    1.016|
+clk            |         |         |    0.726|         |
+parity_en      |         |         |    0.916|    0.916|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Jun 10 09:52:41 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 257 MB
+
+
+

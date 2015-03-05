@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+io_buf instance_name (
+    .IO(IO), 
+    .O(O), 
+    .I(I), 
+    .T(T)
+    );
+
+

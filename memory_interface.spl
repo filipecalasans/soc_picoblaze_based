@@ -1,0 +1,23 @@
+[Inputs]
+clk
+reset
+write
+read
+cs
+=data_in[7:0]=
+=address[3:0]=
+[Outputs]
+CE_out
+WE_out
+OE_out
+ADV
+CRE
+UB
+LB
+=data_out[7:0]=
+=addr_mem[22:0]=
+[BiDir]
+=data_mem[15:0]=
+[ATTRIBUTES]
+VeriModel memory_interface
+

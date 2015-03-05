@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj soc_with_memory -o "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/io_buf.tfi" -lib work "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project//io_buf.v" -module io_buf -template C:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

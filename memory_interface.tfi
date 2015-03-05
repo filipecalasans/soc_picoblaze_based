@@ -1,0 +1,25 @@
+
+
+
+// Instantiate the module
+memory_interface instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .write(write), 
+    .read(read), 
+    .cs(cs), 
+    .data_in(data_in), 
+    .address(address), 
+    .data_mem(data_mem), 
+    .data_out(data_out), 
+    .addr_mem(addr_mem), 
+    .CE_out(CE_out), 
+    .WE_out(WE_out), 
+    .OE_out(OE_out), 
+    .ADV(ADV), 
+    .CRE(CRE), 
+    .UB(UB), 
+    .LB(LB)
+    );
+
+

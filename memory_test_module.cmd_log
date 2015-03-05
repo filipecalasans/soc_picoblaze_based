@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj soc_with_memory -o "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project/memory_test_module.tfi" -lib work "C:/Users/Filipe/Documents/Classes/Spring - 2013/SystemOnChipDesign/Project5/ise_project//memory_test_module.v" -module memory_test_module -template C:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

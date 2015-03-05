@@ -1,0 +1,74 @@
+NET "clk"            	LOC = "v10" ;
+	
+NET "reset"            	LOC = "c4"  ; 
+
+NET "baud_val<0>"      	LOC = "t10" ;
+NET "baud_val<1>"      	LOC = "t9"  ;
+NET "baud_val<2>"      	LOC = "v9"  ;
+NET "baud_val<3>"      	LOC = "m8"  ;
+
+NET "bit8"      		LOC = "t5"  ;
+NET "parity_en"      	LOC = "v8"  ;
+NET "odd_n_even"      	LOC = "u8"  ;
+ 
+NET "rx"           		LOC = "N17";
+NET "tx"            	LOC = "N18";	
+ 
+NET "interrupt"			LOC = "c9";
+NET "interrupt_ack"		LOC = "T11";
+		
+## onBoard Cellular RAM
+NET "control_mem<4>"          LOC = "L18";
+NET "control_mem<5>"          LOC = "M16";
+
+NET "control_mem<3>"          LOC = "H18";
+NET "control_mem<6>"          LOC = "L15";
+NET "clk_mem"  				  LOC = "R10";
+
+NET "control_mem<2>"         LOC = "M18";
+NET "control_mem<0>"          LOC = "K16";
+NET "control_mem<1>"          LOC = "K15";
+
+NET "addr_mem_mem_interface<0>"      LOC = "K18";
+NET "addr_mem_mem_interface<1>"      LOC = "K17";
+NET "addr_mem_mem_interface<2>"      LOC = "J18";
+NET "addr_mem_mem_interface<3>"      LOC = "J16";
+NET "addr_mem_mem_interface<4>"      LOC = "G18";
+NET "addr_mem_mem_interface<5>"      LOC = "G16";
+NET "addr_mem_mem_interface<6>"      LOC = "H16";
+NET "addr_mem_mem_interface<7>"      LOC = "H15";
+NET "addr_mem_mem_interface<8>"      LOC = "H14";
+NET "addr_mem_mem_interface<9>"      LOC = "H13"; 
+NET "addr_mem_mem_interface<10>"     LOC = "F18"; 
+NET "addr_mem_mem_interface<11>"     LOC = "F17"; 
+NET "addr_mem_mem_interface<12>"     LOC = "K13"; 
+NET "addr_mem_mem_interface<13>"     LOC = "K12"; 
+NET "addr_mem_mem_interface<14>"     LOC = "E18"; 
+NET "addr_mem_mem_interface<15>"     LOC = "E16"; 
+NET "addr_mem_mem_interface<16>"     LOC = "G13"; 
+NET "addr_mem_mem_interface<17>"     LOC = "H12"; 
+NET "addr_mem_mem_interface<18>"     LOC = "D18"; 
+NET "addr_mem_mem_interface<19>"     LOC = "D17"; 
+NET "addr_mem_mem_interface<20>"     LOC = "G14"; 
+NET "addr_mem_mem_interface<21>"     LOC = "F14"; 
+NET "addr_mem_mem_interface<22>"     LOC = "C18"; 
+NET "zero<0>"     LOC = "C17";
+NET "zero<1>"      LOC = "F16";
+NET "zero<2>"     LOC = "F15";
+
+NET "data_mem_mem_interface<0>"       LOC = "R13";
+NET "data_mem_mem_interface<1>"       LOC = "T14"; 
+NET "data_mem_mem_interface<2>"       LOC = "V14"; 
+NET "data_mem_mem_interface<3>"       LOC = "U5" ; 
+NET "data_mem_mem_interface<4>"       LOC = "V5" ; 
+NET "data_mem_mem_interface<5>"       LOC = "R3" ; 
+NET "data_mem_mem_interface<6>"       LOC = "T3";  
+NET "data_mem_mem_interface<7>"       LOC = "R5";  
+NET "data_mem_mem_interface<8>"       LOC = "N5";  
+NET "data_mem_mem_interface<9>"       LOC = "P6";  
+NET "data_mem_mem_interface<10>"      LOC = "P12"; 
+NET "data_mem_mem_interface<11>"      LOC = "U13"; 
+NET "data_mem_mem_interface<12>"      LOC = "V13"; 
+NET "data_mem_mem_interface<13>"      LOC = "U10"; 
+NET "data_mem_mem_interface<14>"      LOC = "R8"; 
+NET "data_mem_mem_interface<15>"      LOC = "T8"; 

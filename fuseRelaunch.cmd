@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/tb_memory_interface_isim_beh.exe" -prj "C:/Users/Filipe/Documents/TCC/TCC_SoC/SystemOnChipDesign/Project5/ise_project/tb_memory_interface_beh.prj" "work.tb_memory_interface" "work.glbl" 
