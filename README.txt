@@ -7,5 +7,5 @@ Project implemented in Xilinx ISE and contains the following modules implemented
  
 This project also contains a basic firmware in assembly.
 
-This was my senior project presented in the University of São Paulo as requirement to obtain the BS in Computer Engineering.
+Senior project presented in the University of São Paulo as requirement to obtain the BS in Computer Engineering.
  
